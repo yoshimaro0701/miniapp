@@ -1,0 +1,17 @@
+<header>
+  <h1></h1>
+ </header>
+ <div class="contents">
+   <h2>投稿フォーム</h2>
+   <%= form_tag('/tweets', method: :post, class: "clearfix") do %>
+   <textarea rows="1" name ="text" cols="30" placeholder="name" ></textarea>
+   <% end %>
+   <%= form_tag('/tweets', method: :post, class: "clearfix") do %>
+         <textarea rows="4" name ="text" cols="30" placeholder="Message"></textarea>
+
+       <div class="button-box">
+         <input type="submit" value="投稿" class="submit-button">
+       </div>
+       <% end %>
+     </form>
+ </div>
